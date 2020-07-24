@@ -4,17 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll --verbose",
+    "start" : "node index.js"
+  },
+  "engines": {
+    "node": "14.4.0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "compression": "^1.7.4",
     "config": "^3.3.1",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "fawn": "^2.1.5",
+    "helmet": "^3.23.3",
     "joi": "^14.3.1",
     "joi-objectid": "^3.0.1",
     "joi-password-complexity": "^4.1.0",
@@ -25,5 +31,9 @@
     "pug": "^3.0.0",
     "winston": "^2.4.5",
     "winston-mongodb": "^5.0.1"
+  },
+  "devDependencies": {
+    "jest": "^22.4.4",
+    "supertest": "^3.0.0"
   }
 }
